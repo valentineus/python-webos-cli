@@ -1,0 +1,10 @@
+{
+  "icon": "icon.png",
+  "id": "some.project",
+  "largeIcon": "largeIcon.png",
+  "main": "index.html",
+  "title": "Project",
+  "type": "web",
+  "vendor": "Example.com",
+  "version": "1.0.0"
+}

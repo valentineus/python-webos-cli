@@ -1,4 +1,5 @@
 """ Репозиторий файла "package.json" """
+
 import json
 
 from packer.models.package_model import PackageModel
@@ -6,6 +7,7 @@ from packer.models.package_model import PackageModel
 
 def load_file(file_path: str) -> PackageModel:
     """ Загрузка и обработка файла """
+
     result: PackageModel = PackageModel()
 
     with open(file_path) as file:
