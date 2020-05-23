@@ -7,7 +7,7 @@ from packer.models.package import PackageModel
 from packer.repositories.package import load_file
 
 
-class TestLoadPackageJson(unittest.TestCase):
+class TestPackageJson(unittest.TestCase):
 
     def test_load(self):
         """ Базовая загрузка файла """

@@ -7,7 +7,7 @@ from packer.models.appinfo import AppInfoModel
 from packer.repositories.appinfo import load_file
 
 
-class TestLoadAppInfoJson(unittest.TestCase):
+class TestAppInfoJson(unittest.TestCase):
 
     def test_load(self):
         """ Базовая загрузка файла """
