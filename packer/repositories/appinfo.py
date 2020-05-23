@@ -2,7 +2,7 @@
 
 import json
 
-from packer.models.appinfo_model import AppInfoModel
+from packer.models.appinfo import AppInfoModel
 
 
 def load_file(file_path: str) -> AppInfoModel:

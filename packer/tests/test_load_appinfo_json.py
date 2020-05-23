@@ -3,8 +3,8 @@
 import os
 import unittest
 
-from packer.models.appinfo_model import AppInfoModel
-from packer.repositories.appinfo_repository import load_file
+from packer.models.appinfo import AppInfoModel
+from packer.repositories.appinfo import load_file
 
 
 class TestLoadAppInfoJson(unittest.TestCase):

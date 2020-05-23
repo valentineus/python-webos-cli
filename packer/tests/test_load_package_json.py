@@ -3,8 +3,8 @@
 import os
 import unittest
 
-from packer.models.package_model import PackageModel
-from packer.repositories.package_repository import load_file
+from packer.models.package import PackageModel
+from packer.repositories.package import load_file
 
 
 class TestLoadPackageJson(unittest.TestCase):

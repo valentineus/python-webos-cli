@@ -2,7 +2,7 @@
 
 import json
 
-from packer.models.package_model import PackageModel
+from packer.models.package import PackageModel
 
 
 def load_file(file_path: str) -> PackageModel:
