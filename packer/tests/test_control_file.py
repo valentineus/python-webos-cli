@@ -4,7 +4,7 @@ import os
 import unittest
 
 from packer.models.control import ControlModel
-from packer.repositories.control import create_file
+from packer.repositories.control import create_file, get_size
 
 
 class TestControlFile(unittest.TestCase):
@@ -25,6 +25,12 @@ class TestControlFile(unittest.TestCase):
 
         create_file(model, file_path, template_file)
 
+    def test_get_size(self):
+        """ Проверка на подсчёт директории проекта """
 
-if __name__ == '__main__':
-    unittest.main()
+        directory_path = os.path.join("example")
+        size: int = get_size(directory_path)
+        self.assertTrue(size > 0)
+
+    if __name__ == '__main__':
+        unittest.main()

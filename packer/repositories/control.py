@@ -1,5 +1,6 @@
 """ Репозиторий файла "control" """
 
+from pathlib import Path
 from string import Template
 
 from packer.models.control import ControlModel
@@ -20,3 +21,16 @@ def create_file(options: ControlModel, file_path: str, template_path: str) -> No
 
     with open(file_path, "tw") as file:
         file.write(template.substitute(dictionary))
+
+
+def get_size(directory_path: str) -> int:
+    """ Получить размер директории """
+
+    directory = Path(directory_path)
+    result: int = 0
+
+    for file in directory.glob("**/*"):
+        if file.is_file():
+            result += file.stat().st_size
+
+    return result
