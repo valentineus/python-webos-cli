@@ -2,6 +2,7 @@
 
 from pathlib import Path
 from string import Template
+from typing import Dict, Union
 
 from packer.models.control import ControlModel
 
@@ -9,7 +10,7 @@ from packer.models.control import ControlModel
 def create_file(options: ControlModel, file_path: str, template_path: str) -> None:
     """ Создать файл по шаблону """
 
-    dictionary = {
+    dictionary: Dict[str, Union[str, int]] = {
         "description": options.description,
         "size": options.size,
         "title": options.title,
@@ -26,7 +27,7 @@ def create_file(options: ControlModel, file_path: str, template_path: str) -> No
 def get_size(directory_path: str) -> int:
     """ Получить размер директории """
 
-    directory = Path(directory_path)
+    directory: Path = Path(directory_path)
     result: int = 0
 
     for file in directory.glob("**/*"):
