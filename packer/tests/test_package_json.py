@@ -8,6 +8,7 @@ from packer.repositories.package import load_file
 
 
 class TestPackageJson(unittest.TestCase):
+    """ Тестирования репозитория и модели "package.json" файла """
 
     def test_load(self):
         """ Базовая загрузка файла """

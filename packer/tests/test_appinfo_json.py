@@ -8,6 +8,7 @@ from packer.repositories.appinfo import load_file
 
 
 class TestAppInfoJson(unittest.TestCase):
+    """ Тестирование репозитория и модели "appinfo.json" файла """
 
     def test_load(self):
         """ Базовая загрузка файла """
