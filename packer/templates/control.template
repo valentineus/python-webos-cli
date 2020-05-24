@@ -1,0 +1,10 @@
+Package: $title
+Version: $version
+Section: misc
+Priority: optional
+Architecture: all
+Installed-Size: $size
+Maintainer: N/A <nobody@example.com>
+Description: $description
+webOS-Package-Format-Version: 2
+webOS-Packager-Version: x.y.x
